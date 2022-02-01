@@ -23,11 +23,11 @@ export function PlateInput() {
         <div>
             <div class="xy-center" style={{marginTop: '10px'}}>
                 <div class="text-center my-5">
-                    <h1 class="mb-5 display-1" style={{fontWeight: 'bold'}}>Ver modelo de auto</h1>
+                    <h1 class="mb-5 display-1" style={{fontWeight: 'bold'}}>Car Model Finder</h1>
                     
                     <div class="mx-auto h4" style={{width: '75%', height: '30%'}}>
                         <input type="text" onChange={updatePlate} style={{float: 'left', width: '75%', height: '100%'}}/>
-                        <button onClick={sendPlate} style={{float: 'right', width: '25%', height: '100%'}}> Enviar </button>
+                        <button onClick={sendPlate} style={{float: 'right', width: '25%', height: '100%'}}>Send</button>
                     </div>
                 </div>  
             </div>
@@ -35,7 +35,7 @@ export function PlateInput() {
             <div class="text-center">
                 {
                     model?
-                    <h3>Modelo del auto: {model}</h3>
+                    <h3>Car Model: {model}</h3>
                     :null
                 }
             </div>
