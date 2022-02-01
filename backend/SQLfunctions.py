@@ -1,10 +1,8 @@
-import pymysql
+import sqlite3
 
 async def getCarModel(carPlate: str):
-    connection = pymysql.connect(host='localhost',
-                                 user='root',
-                                 password='root',
-                                 db='carDB')
+    connection = sqlite3.connect('carDb.db')
+    
     try:
         with connection.cursor() as cursor:
             cmd = f"""SELECT carManufacturer, carModel FROM carsData WHERE carPlate = '{carPlate}'"""
