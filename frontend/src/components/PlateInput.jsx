@@ -7,18 +7,31 @@ export function PlateInput() {
     const [plate, setPlate] = useState('');
     const [model, setModel] = useState('');
     
-    // convertir a arrow/lambda functions?
+
     function updatePlate(val)
     {
         setPlate(val.target.value);
     }
     function sendPlate()
     {
-        setModel(plate)
-        console.log(plate);
-        // Placeholder para ¿la función lambda?
+        const url = "http://127.0.0.1:8000/getCarName/byPlate/" + plate.toUpperCase();
+
+        var http = new XMLHttpRequest();
+        http.open("GET", url, false);
+        http.send(null);
+        var jsonObject = JSON.parse(http.responseText);
+
+        if (jsonObject != null)
+
+        {
+            setModel('Car model: ' + jsonObject['carManufacturer'] + ', ' +jsonObject['carModel']);
+        }
+        else
+        {
+            setModel('Car plate not found');
+        }
     }
-      
+
     return (
         <div>
             <div class="xy-center" style={{marginTop: '10px'}}>
@@ -35,7 +48,7 @@ export function PlateInput() {
             <div class="text-center">
                 {
                     model?
-                    <h3>Car Model: {model}</h3>
+                    <h3>{model}</h3>
                     :null
                 }
             </div>
