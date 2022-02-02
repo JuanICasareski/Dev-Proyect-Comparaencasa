@@ -1,6 +1,9 @@
+from functools import lru_cache
 import sqlite3
+import time
 
-async def getCarModel(carPlate: str):
+@lru_cache(maxsize=100)  
+def getCarModel(carPlate: str):
     connection = sqlite3.connect('carDb.db')
 
     try:

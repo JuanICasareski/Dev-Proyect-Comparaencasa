@@ -1,2 +1,4 @@
 __pycache__
-
+pyvenv.cfg
+backend/Lib
+backend/Scripts
