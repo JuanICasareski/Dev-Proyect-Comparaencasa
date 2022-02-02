@@ -1,0 +1,15 @@
+{
+    "carDetails":
+        [
+            {
+                "carPlate":"somePlate",
+                "carModel":"someModel",
+                "carManufacturer":"someManufacturer"
+            },
+            {
+                "carPlate":"someOtherPlate",
+                "carModel":"someOtherModel",
+                "carManufacturer":"someOtherManufacturer"
+            }
+        ]
+}
