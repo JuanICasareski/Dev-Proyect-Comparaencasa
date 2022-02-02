@@ -14,7 +14,7 @@ export function PlateInput() {
     }
     function sendPlate()
     {
-        const url = "http://127.0.0.1:8000/getCarName/byPlate/" + plate.toUpperCase();
+        const url = "http://<host ip>:8000/getCarName/byPlate/" + plate.toUpperCase();
 
         var http = new XMLHttpRequest();
         http.open("GET", url, false);
