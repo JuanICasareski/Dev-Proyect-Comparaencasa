@@ -4,7 +4,7 @@
 1. Install [Python 3.9.9](https://www.python.org/downloads/release/python-399/)
 2. Install [Node.js](https://nodejs.org/en/)
 3. Install [Git](https://git-scm.com/downloads)
-4. Run <```git clone https://github.com/JuanICasareski/Dev-Proyect-Comparaencasa/edit/main/README.md```>
+4. Run <```git clone https://github.com/JuanICasareski/Dev-Proyect-Comparaencasa```>
 
 
 **Backend setup:**
