@@ -29,7 +29,7 @@
 3. Run <```uvicorn main:app --host <local ip> --port 8000```>
 
 **Frontend initialization**
-1. In line 17 of ```frontend/src/components.PlateInput.jsx``` change ```<host ip>``` for the ip of the backend host
+1. In line 17 of ```frontend/src/components/PlateInput.jsx``` change ```<host ip>``` for the ip of the backend host
 2. Open the command prompt
 3. Move into the directory with <```cd C:\Users\YourUser\YourDirectory\frontend```>
 4. Run <```npm start```>
