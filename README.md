@@ -10,7 +10,7 @@
 **Backend setup:**
 1. Open the command prompt
 2. Move into the directory with <```cd C:\Users\YourUser\YourDirectory\backend```>
-3. Run <```pip install -r requirements.py```>
+3. Run <```pip install -r requirements.txt```>
 
 
 **Frontend setup:**
