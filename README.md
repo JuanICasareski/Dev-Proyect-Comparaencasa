@@ -17,7 +17,6 @@
 1. Open the command prompt
 2. Move into the directory with <```cd C:\Users\YourUser\YourDirectory\frontend```>
 3. Run <```npm install```>
-4. Run <```npm fund```>
    
 
 ## **Initialization**
